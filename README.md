@@ -1,1 +1,1 @@
-# Corinthians-Individual
+# Corinthians Individual

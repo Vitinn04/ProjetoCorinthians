@@ -47,11 +47,3 @@ body {
     color: #D72327;
     font-size: larger;
 }
-
-.navegacao #nav_cadastro,
-#nav_login,
-#nav_index {
-    background-color: rgba(198, 38, 14, 0.8);
-    border: rgba(198, 38, 14, 0.8) solid;
-    border-radius: 5px;
-}

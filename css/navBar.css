@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/img/ENTRADA.PNG);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+}
+
+.header .container {
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    list-style: none;
+    font-size: large;
+}
+
+.navegacao li,
+.navegacao a {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #D72327;
+}
+
+.navegacao li:hover,
+.navegacao a:hover {
+    color: #D72327;
+    font-size: larger;
+}
+
+.navegacao #nav_cadastro,
+#nav_login,
+#nav_index {
+    background-color: rgba(198, 38, 14, 0.8);
+    border: rgba(198, 38, 14, 0.8) solid;
+    border-radius: 5px;
+}

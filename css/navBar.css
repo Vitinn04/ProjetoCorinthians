@@ -5,6 +5,13 @@ body {
     background-size: cover;
 }
 
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .container {
     display: flex;
     width: 80%;

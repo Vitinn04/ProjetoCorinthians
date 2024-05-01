@@ -22,7 +22,7 @@ body {
     background: rgba(0, 0, 0, 0.7);
 }
 
- .container img {
+.logo {
     display: flex;
     align-self: center;
     width: 80px;

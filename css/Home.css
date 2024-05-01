@@ -2,14 +2,40 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.backgroundImgSobre{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/ENTRADA.PNG);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgDemocracia{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/democracia.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgFeminino{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/futebolFeminino.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgSobreMim{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/sobre.png);
+    background-size: cover;
+    padding: 6%;
 }
 
 .conteudo {
     background: rgba(255, 255, 255, 0.7);
-    margin: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +47,20 @@ body {
     margin: 2%;
 }
 
-.foto {
+.imagemFeminino {
     margin: 2%;
 }
 
-.foto img{
+.fotos{
+    margin: 2%;
+}
+
+.fotos img{
+    width: auto;
+    height: 500px;
+}
+
+.imagemFeminino img{
     width: 400px;
     height: auto;
 }

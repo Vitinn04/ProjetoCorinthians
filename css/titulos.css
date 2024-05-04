@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Figtree&display=swap");
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;

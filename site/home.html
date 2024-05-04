@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="../css/navBar.css">
-  <link rel="stylesheet" href="../css/Home.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/carrossel.css">
+  <script src="../js/carrossel.js" defer></script>
+  <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon">
 </head>
 
 <body>
@@ -26,8 +29,37 @@
       </div>
     </div>
   </div>
+  <section class="carrossel">
+    <div class="carrosselConteudo">
+      <input type="radio" name="btn-radio" id="radio1">
+      <input type="radio" name="btn-radio" id="radio2">
+      <input type="radio" name="btn-radio" id="radio3">
+
+      <div class="carrosselBox primeiro">
+        <img class="img" src="../assets/img/bemvindoCarrossel.png" alt="Imagem 1">
+      </div>
+      <div class="carrosselBox">
+        <img class="img" src="../assets/img/titulosLibertadores.png" alt="Imagem 2">
+      </div>
+      <div class="carrosselBox">
+        <img class="img" src="../assets/img/TituloLibertadore2023.png" alt="Imagem 3">
+      </div>
+
+      <div class="navAuto">
+        <div class="autoBtn1"></div>
+        <div class="autoBtn2"></div>
+        <div class="autoBtn3"></div>
+      </div>
+
+      <div class="navManual">
+        <label for="radio1" class="manualBtn"></label>
+        <label for="radio2" class="manualBtn"></label>
+        <label for="radio3" class="manualBtn"></label>
+      </div>al
+    </div>
+  </section>
   <div class="backgroundImgSobre" id="sobre">
-    <div class="conteudo" >
+    <div class="conteudo">
       <div class="titulo">
         <h1>Sobre o Corinthians</h1>
         <div class="texto"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero voluptates
@@ -59,7 +91,7 @@
   </div>
 
   <div class="backgroundImgDemocracia" id="democracia">
-    <div class="conteudo" >
+    <div class="conteudo">
       <div class="fotos"><img src="../assets/img/socrates.png" alt=""></div>
       <div class="titulo">
         <h1>Democracia</h1>
@@ -91,7 +123,7 @@
   </div>
 
   <div class="backgroundImgFeminino" id="feminino">
-    <div class="conteudo" >
+    <div class="conteudo">
       <div class="titulo">
         <h1>Futebol Feminino</h1>
         <div class="texto"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero voluptates
@@ -123,7 +155,7 @@
   </div>
 
   <div class="backgroundImgSobreMim" id="sobreMin">
-    <div class="conteudo" >
+    <div class="conteudo">
       <div class="fotos"><img src="../assets/img/PERFIL.png" alt=""></div>
       <div class="titulo">
         <h1>Sobre Mim</h1>

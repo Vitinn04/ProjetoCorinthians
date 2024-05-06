@@ -18,6 +18,14 @@ html {
     padding: 6%;
 }
 
+.backgroundImgNossaHistoria{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/minhaHistoriaeUmaPaginaEmPreto.png);
+    background-size: cover;
+    padding: 6%;
+}
+
 .backgroundImgFeminino{
     width: auto;
     height: 100%;
@@ -30,6 +38,14 @@ html {
     width: auto;
     height: 100%;
     background-image: url(../assets/img/sobre.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgOnu {
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/respeitaAsMina.png);
     background-size: cover;
     padding: 6%;
 }

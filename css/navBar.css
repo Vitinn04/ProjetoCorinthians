@@ -58,6 +58,7 @@ body {
 
 .navegacao li:hover,
 .navegacao a:hover {
+    transition: ease 0.2s;
     color: #D72327;
     font-size: larger;
 }

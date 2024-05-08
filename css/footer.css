@@ -32,6 +32,11 @@ footer img{
     color: #ffffff;
     text-decoration: none;
     -webkit-text-stroke: 0.5px #D72327;
+    font-size: large;
+}
+
+.redes a {
+    text-decoration: none;
 }
 
 .redes img {

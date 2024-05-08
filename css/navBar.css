@@ -56,6 +56,28 @@ body {
     -webkit-text-stroke: 0.5px #D72327;
 }
 
+.navegacao li ul.dropdown {
+    display: block;
+}
+
+.navegacao li ul.dropdown {
+    padding: 0;
+    width: 33vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    list-style: none;
+    font-size: medium;
+}
+
+.navegacao li:hover ul.dropdown {
+    display: block;
+    transition: ease 0.2s;
+    color: #D72327;
+    font-size: large;
+}
+
 .navegacao li:hover,
 .navegacao a:hover {
     transition: ease 0.2s;

@@ -66,8 +66,8 @@ html {
 }
 
 .texto{
-    font-size: larger;
-    text-align: center;
+    font-size: 20px;
+    text-align: start;
     margin: 2%;
 }
 
@@ -87,6 +87,10 @@ html {
 .imagemFeminino img{
     width: 400px;
     height: auto;
+}
+
+.titulo {
+    margin-top: 5vh;
 }
 
 .titulo h1{

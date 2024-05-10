@@ -62,7 +62,7 @@ body {
 
 .navegacao li ul.dropdown {
     padding: 0;
-    width: 33vh;
+    width: 35vh;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     z-index: 999;

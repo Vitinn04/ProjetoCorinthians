@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/timaoClicker.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/timaoClicker.css">
+  <script src="../js/timaoClicker.js" defer></script>
   <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon">
-    <title>Timão Clicker</title>
+  <title>Timão Clicker</title>
 </head>
+
 <body>
-  <div class="jogar">
-    <button onclick="jogar()">Jogar</button>
+  <div class="timaoClicker">
+    <div class="jogar">
+      <button onclick="jogar()">Jogar</button>
+    </div>
+    <div class="titulo">
+      <H1>Timão Clicker</H1>
+    </div>
+    <div class="button">
+      <button onclick="escudo()">Escudo</button>
+      <button onclick="comprarNeoQuimica()">Neo Química</button>
+      <button onclick="comprarCassioRamos()">Cassio Ramos</button>
+      <button onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
+    </div>
+    <div id="div_mensagem"></div>
   </div>
-  <H1>Timão Clicker</H1>
-  <button onclick="escudo()">Escudo</button>
-  <button onclick="comprarNeoQuimica()">Neo Química</button>
-  <button onclick="comprarCassioRamos()">Cassio Ramos</button>
-  <button onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
-  <div id="div_mensagem"></div>
   <script src="../js/timaoClicker.js"></script>
 </body>
+
 </html>

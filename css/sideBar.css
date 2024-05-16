@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/img/DIVIDIDA.PNG);
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 15vw;
+    height: 100vh;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.7);
+    border-right: #D72327 solid;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 140%;
+}
+
+.perfil .foto_usu {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border: #D72327 solid;
+    border-radius: 100%;
+}
+
+.perfil img {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    font-size: 120%;
+}
+
+.navegacao div,
+.navegacao a {
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navegacao div:hover,
+.navegacao a:hover {
+    background-color: #D72327;
+}
+
+.navegacao #nav_home, #nav_quiz, #nav_placar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #D72327;
+    border: #000000 solid 1px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.menu .saida a {
+    display: flex;
+    color: #ffffff;
+    gap: 7px;
+    text-decoration: none;
+}

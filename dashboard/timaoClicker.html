@@ -5,26 +5,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/timaoClicker.css">
+  <link rel="stylesheet" href="../css/sideBar.css">
   <script src="../js/timaoClicker.js" defer></script>
   <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon">
   <title>Timão Clicker</title>
 </head>
 
 <body>
+  <div class="menu">
+    <div class="perfil">
+      <div id="foto_perfil" class="foto_usu"></div>
+      <span id="nome_usuario"></span>
+    </div>
+    <div class="navegacao">
+      <div><a href="../dashboard/dashboard.html">DASHBOARD</a></div>
+      <div><a href="../dashboard/timaoClicker.html">TIMÂO CLICKER</a></div>
+      <div><a href="../dashboard/neoQuimica.html">NEO QUÍMICA</a></div>
+    </div>
+    <div class="saida">
+      <span><a href="../site/login.html">SAIR</a></span>
+    </div>
+  </div>
   <div class="timaoClicker">
-    <div class="jogar">
-      <button onclick="jogar()">Jogar</button>
+    <div class="inicio">
+      <div class="titulo">
+        <H1>TIMÃO CLICKER</H1>
+      </div>
+      <div class="explicacao">
+        <p class="titulos">REGRAS DO TIMÃO CLICKER</p>
+        <p class="titulos">Recursos:</p>
+        <p>
+          Existem quatro tipos de recursos: bolinhas, Neo Química, Parque São Jorge e Cássio Ramos.
+          As bolinhas são o recurso principal e são obtidas através de cliques ou geradas automaticamente ao longo do
+          tempo com base nas outras aquisições.</p>
+
+        <p class="titulos">Compras:</p>
+        <p>
+          O jogador pode gastar bolinhas para comprar recursos como Neo Química, Parque São Jorge e Cássio Ramos.
+          Cada tipo de recurso comprado aumenta a produção de bolinhas ou fornece outros benefícios.
+        </p>
+        <ul>
+          <li>Neo Química: Aumenta a produção de bolinhas automaticamente ao longo do tempo.</li>
+          <li>Parque São Jorge: Reduz o intervalo entre as gerações de bolinhas da Neo Química.</li>
+          <li>Cassio Ramos: Aumenta a quantidade de bolinhas geradas por clique.</li>
+        </ul>
+
+        <p class="titulos">Atualização de Preços:</p>
+        <p>
+          Os preços dos recursos aumentam ao longo do tempo, o que torna as compras mais caras à medida que o jogo
+          progride.</p>
+
+        <p class="titulos">Fim do Jogo:</p>
+        <p>
+          O jogo termina quando o jogador alcança 50 unidades de cada tipo de recurso.
+          O tempo para alcançar esse objetivo é registrado.</p>
+      </div>
+      <button class="botao" onclick="jogar()">Jogar</button>
     </div>
-    <div class="titulo">
-      <H1>Timão Clicker</H1>
+    <!-- <div class="jogo">
+      <div class="titulo">
+        <H1>TIMÃO CLICKER</H1>
+      </div>
+      <div class="button">
+        <button class="escudo" onclick="escudo()">Escudo</button>
+        <button class="botao" onclick="comprarNeoQuimica()">Neo Química</button>
+        <button class="botao" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
+        <button class="botao" onclick="comprarCassioRamos()">Cassio Ramos</button>
+        <div id="div_mensagem"></div>
+      </div>
     </div>
-    <div class="button">
-      <button onclick="escudo()">Escudo</button>
-      <button onclick="comprarNeoQuimica()">Neo Química</button>
-      <button onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
-      <button onclick="comprarCassioRamos()">Cassio Ramos</button>
-    </div>
-    <div id="div_mensagem"></div>
+    <div class="jogarNovamente">
+      <h1>Parabens você zerou o jogo!!! você agr é um verdadeiro CORINTHIANO!!!</h1>
+      <p id="jogoFinalizado"></p>
+      <h3>Deseja jogar novamente?</h3>
+      <button class="botao" onclick="jogarNovamente()">Sim</button>
+      <button class="botao" onclick="voltarInicio()">Não</button>
+    </div>  -->
   </div>
   <script src="../js/timaoClicker.js"></script>
 </body>

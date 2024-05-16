@@ -1,19 +1,82 @@
+.timaoClicker {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vh;
+}
+
 .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #D72327;
+    text-align: center;
 }
 
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4vh;
+.explicacao {
+    height: 30%;
+    width: 80%;
+    border: #ffffff solid;
+    padding: 1%;
 }
 
-#div_mensagem {
+.titulos {
+    font-size: large;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #D72327;
+    text-align: center;
+    margin-top: 1%;
+}
+
+ul{
+    width: auto;
+    list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 4vh;
+    margin: 1%;
+    padding: 0;
+}
+
+li {
+    text-align: start;
+    color: #ffffff;
+    width: 70%;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin: 1%;
+    color: #ffffff;
+}
+
+.botao {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: #D72327 solid;
+    color: #000;
+    font-size: large;
+    background-color: black;
+    background-image: url(../assets/img/bolaCorinthians.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.botao:hover {
+    width: 65px;
+    height: 65px;
+    transition: 0.5s;
+    font-size: larger;
 }

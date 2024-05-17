@@ -69,18 +69,26 @@
         <div class="titulo">
           <H1>TIMÃO CLICKER</H1>
         </div>
-        <div>
-          <button class="escudo" onclick="escudo()">Escudo</button>
+        <div class="click">
+          <div class="escudo" onclick="escudo()">
+            <img src="../assets/img/escudoParaJogo.png" alt="">
+          </div>
           <p id="bolinha"></p>
         </div>
         <div class="botoes">
-          <button class="botaoNeo" onclick="comprarNeoQuimica()">Neo Química</button>
-          <button class="botaoParque" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
-          <button class="botaoCassio" onclick="comprarCassioRamos()">Cassio Ramos</button>
+          <div class="botaoCompra">
+            <button class="botaoNeo" onclick="comprarNeoQuimica()">Neo Química</button>
+            <p id="neoQuimicaHtml"></p>
+          </div>
+          <div class="botaoCompra">
+            <button class="botaoParque" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
+            <p id="parqueSaoJorgeHtml"></p>
+          </div>
+          <div class="botaoCompra">
+            <button class="botaoCassio" onclick="comprarCassioRamos()">Cassio Ramos</button>
+            <p id="cassioRamosHtml"></p>
+          </div>
         </div>
-        <p id="neoQuimica"></p>
-        <p id="parqueSaoJorge"></p>
-        <p id="cassioRamos"></p>
       </div>
     </div>
     <div id="cortina3" class="desaparecer">

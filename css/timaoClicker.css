@@ -48,7 +48,7 @@
     margin-top: 1%;
 }
 
-ul{
+ul {
     width: auto;
     list-style: none;
     display: flex;
@@ -101,7 +101,38 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 3vh;
+    gap: 8vh;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.escudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.escudo img {
+    height: 250px;
+    width: 250px;
+}
+
+.escudo img:active {
+    transform: scale(0.8);
+}
+
+#bolinha,
+#neoQuimicaHtml,
+#parqueSaoJorgeHtml,
+#cassioRamosHtml {
+    color: #fff;
+    font-size: larger;
+    -webkit-text-stroke: 1px #D72327;
 }
 
 /* Tela de encerramento */
@@ -131,7 +162,8 @@ p {
     border: #fff solid;
 }
 
-.desejaJogarNovamente, .metricasGame {
+.desejaJogarNovamente,
+.metricasGame {
     color: #fff;
     font-size: medium;
     text-decoration: none;
@@ -151,4 +183,5 @@ p {
 
 .desaparecer {
     display: none;
+    transition: 1s;
 }

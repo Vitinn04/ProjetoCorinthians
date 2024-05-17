@@ -4,8 +4,8 @@ var neoQuimica = 0;
 var parqueSaoJorge = 0;
 var cassioRamos = 0;
 var preçoNeoQuimica = 50;
-var preçoCassioRamos = 75;
-var preçoParqueSaoJorge = 100;
+var preçoParqueSaoJorge = 75;
+var preçoCassioRamos = 100;
 var tempoGerarBolinhas = 10000;
 var tempo = 0;
 var tempoFinal = 0;
@@ -26,8 +26,8 @@ function jogarNovamente() {
     parqueSaoJorge = 0;
     cassioRamos = 0;
     preçoNeoQuimica = 50;
-    preçoCassioRamos = 75;
-    preçoParqueSaoJorge = 100;
+    preçoParqueSaoJorge = 75;
+    preçoCassioRamos = 100;
     tempoGerarBolinhas = 10000;
     tempo = new Date();
 }
@@ -39,8 +39,10 @@ function escudo() {
     } else {
         bolinhas++;
     }
-    bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas}`;
-    neoQuimica.innerHTML += `${neoQuimica}`
+    bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas.toFixed(1)}`;
+    neoQuimicaHtml.innerHTML = `${neoQuimica}`;
+    parqueSaoJorgeHtml.innerHTML = `${parqueSaoJorge}`;
+    cassioRamosHtml.innerHTML = `${cassioRamos}`;
 }
 
 function comprarNeoQuimica() {
@@ -53,7 +55,10 @@ function comprarNeoQuimica() {
             neoQuimica = 50;
         }
         preçoNeoQuimica += preçoNeoQuimica / 12;
-        div_mensagem.innerHTML = `Você já deu ${click} click's, tem ${bolinhas.toFixed(2)} bolinhas, possui ${neoQuimica} Neo Quimica, ${parqueSaoJorge} Parque São Jorge e ${cassioRamos} Cassio Ramos`
+        bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas.toFixed(1)}`;
+        neoQuimicaHtml.innerHTML = `${neoQuimica}`;
+        parqueSaoJorgeHtml.innerHTML = `${parqueSaoJorge}`;
+        cassioRamosHtml.innerHTML = `${cassioRamos}`;
 
     } else {
         alert(`Você não tem a quantidade de bolinhas nescessarias você precisa de mais ${preçoNeoQuimica - bolinhas} bolinhas`)
@@ -80,7 +85,10 @@ function comprarParqueSaoJorge() {
         }
         preçoParqueSaoJorge += preçoParqueSaoJorge / 12;
         tempoGerarBolinhas -= 100;
-        div_mensagem.innerHTML = `Você já deu ${click} click's, tem ${bolinhas.toFixed(2)} bolinhas, possui ${neoQuimica} Neo Quimica, ${parqueSaoJorge} Parque São Jorge e ${cassioRamos} Cassio Ramos`
+        bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas.toFixed(1)}`;
+        neoQuimicaHtml.innerHTML = `${neoQuimica}`;
+        parqueSaoJorgeHtml.innerHTML = `${parqueSaoJorge}`;
+        cassioRamosHtml.innerHTML = `${cassioRamos}`;
     } else {
         alert(`Você não tem a quantidade de bolinhas nescessarias você precisa de mais ${preçoParqueSaoJorge - bolinhas} bolinhas`)
     }
@@ -105,7 +113,10 @@ function comprarCassioRamos() {
             cassioRamos = 50;
         }
         preçoCassioRamos += preçoCassioRamos / 12;
-        div_mensagem.innerHTML = `Você já deu ${click} click's, tem ${bolinhas.toFixed(2)} bolinhas, possui ${neoQuimica} Neo Quimica, ${parqueSaoJorge} Parque São Jorge e ${cassioRamos} Cassio Ramos`
+        bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas.toFixed(1)}`;
+        neoQuimicaHtml.innerHTML = `${neoQuimica}`;
+        parqueSaoJorgeHtml.innerHTML = `${parqueSaoJorge}`;
+        cassioRamosHtml.innerHTML = `${cassioRamos}`;
     } else {
         alert(`Você não tem a quantidade de bolinhas nescessarias você precisa de mais ${preçoCassioRamos - bolinhas} bolinhas`)
     }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco KNAB</title>
+</head>
+
+<body>
+    <div id="div_mensagem">
+        <h1>Seja bem vindo ao banco KNAB</h1>
+        <br>
+        <h3>Simulação de Emprestimos e Investimentos</h3>
+        <br>
+        <p>Entre com os dados de sua conta:</p>
+        <input type="text" id="input_conta" placeholder="Conta">
+        <input type="text" id="input_digito" placeholder="Digito">
+        <input type="password" id="input_senha" placeholder="Senha">
+        <br><br><br>
+        <button onclick="simular()">Simular</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function simular() {
+        var conta = Number(input_conta.value);
+        var digito = Number(input_digito.value);
+        var senha = input_senha.value;
+        var resto = conta % 10;
+        if (conta != 0) {
+            if (digito == resto) {
+                if (senha == 'manaus' && (digito == 0 || digito == 1 || digito == 2 || digito == 3)) {
+                    div_mensagem.innerHTML = '';
+                    div_mensagem.innerHTML += `<div id="div_mensagem">
+                        <h1>O banco KNAB é a sua melhor opção</h1>
+            <br><br>
+            <h3>Emprestimos e Investimentos com as melhores taxas do mercado</h3>
+            <br><br>
+            <h4>Entre com os dados da sua Simulação</h4>
+            <br><br>
+            Valor da operação: <input type="text" id="input_operacao" placeholder="Valor">
+                        <br><br>
+                            <select name="operação" id="select_operacao">
+                                <option value="#">Selecione a operação</option>
+                                <option value="1">Empréstimo</option>
+                                <option value="2">Investimento</option>
+                            </select>
+                            <select name="prazo" id="select_prazo">
+                                <option value="#">Selecione a prazo</option>
+                                <option value="1">Curto</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Longo</option>
+                            </select>
+                            <br><br>
+                                <button onclick="resultado()">Mostrar o resultado</button>
+                                <button onclick="voltaSimulacao()">Voltar a Simulação</button>
+                                <br>
+                                <div id="div_mensagem1"></div>
+                            </div>`
+                } else if (senha == 'recife' && (digito == 4 || digito == 7)) {
+                    div_mensagem.innerHTML = '';
+                    div_mensagem.innerHTML += `<div id="div_mensagem">
+                        <h1>O banco KNAB é a sua melhor opção</h1>
+            <br><br>
+            <h3>Emprestimos e Investimentos com as melhores taxas do mercado</h3>
+            <br><br>
+            <h4>Entre com os dados da sua Simulação</h4>
+            <br><br>
+            Valor da operação: <input type="text" id="input_operacao" placeholder="Valor">
+                        <br><br>
+                            <select name="operação" id="select_operacao">
+                                <option value="#">Selecione a operação</option>
+                                <option value="1">Empréstimo</option>
+                                <option value="2">Investimento</option>
+                            </select>
+                            <select name="prazo" id="select_prazo">
+                                <option value="#">Selecione a prazo</option>
+                                <option value="1">Curto</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Longo</option>
+                            </select>
+                            <br><br>
+                                <button onclick="resultado()">Mostrar o resultado</button>
+                                <button onclick="voltaSimulacao()">Voltar a Simulação</button>
+                                <br>
+                                <div id="div_mensagem1"></div>
+                            </div>`
+                } else if (senha == 'fortaleza') {
+                    div_mensagem.innerHTML = '';
+                    div_mensagem.innerHTML += `<div id="div_mensagem">
+                        <h1>O banco KNAB é a sua melhor opção</h1>
+            <br><br>
+            <h3>Emprestimos e Investimentos com as melhores taxas do mercado</h3>
+            <br><br>
+            <h4>Entre com os dados da sua Simulação</h4>
+            <br><br>
+            Valor da operação: <input type="text" id="input_operacao" placeholder="Valor">
+                        <br><br>
+                            <select name="operação" id="select_operacao">
+                                <option value="#">Selecione a operação</option>
+                                <option value="1">Empréstimo</option>
+                                <option value="2">Investimento</option>
+                            </select>
+                            <select name="prazo" id="select_prazo">
+                                <option value="#">Selecione a prazo</option>
+                                <option value="1">Curto</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Longo</option>
+                            </select>
+                            <br><br>
+                                <button onclick="resultado()">Mostrar o resultado</button>
+                                <button onclick="voltaSimulacao()">Voltar a Simulação</button>
+                                <br>
+                                <div id="div_mensagem1"></div>
+                            </div>`
+                }
+            }
+        } else {
+            alert(`Os dados estão incorretos`)
+        }
+    }
+    var acresentar = 1;
+    function resultado() {
+        var Valor = input_operacao.value;
+        var operacao = select_operacao.value;
+        var prazo = select_prazo.value;
+        if (prazo == '1' || prazo == '2') {
+            alert('Esta operação está condicionada ao seu perfil');
+        }
+        if (operacao == '1') {
+            if (prazo == '1') {
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Para o empréstimo de R$${Valor} no Curto prazo será cobrado os juros de R$${Valor * 0.24} ao ano <br>`;
+            }else if (prazo == '2'){
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Para o empréstimo de R$${Valor} no Médio prazo será cobrado os juros de R$${Valor * 0.16} ao ano <br>`;
+            }else if (prazo == '3'){
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Para o empréstimo de R$${Valor} no Longo prazo será cobrado os juros de R$${Valor * 0.10} ao ano <br>`;
+            }
+        }else if (operacao == 2){
+            if(prazo == '1') {
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Investindo R$${Valor} no Curto prazo o seu rendimento será de R$${Valor * 0.05} ao ano <br>`;
+            }else if (prazo == '2'){
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Investindo R$${Valor} no Médio prazo o seu rendimento será de R$${Valor * 0.08} ao ano <br>`;
+            }else if (prazo == '3'){
+                div_mensagem1.innerHTML += `Simulação ${acresentar++} - Investindo R$${Valor} no Longo prazo o seu rendimento será de R$${Valor * 0.12} ao ano <br>`;
+            }
+        }
+    }
+    function voltaSimulacao() {
+        div_mensagem1.innerHTML = '';
+        acresentar = 1;
+        input_operacao.value = '';
+        select_operacao.value = '#';
+        select_prazo.value = '#';
+    }
+</script>

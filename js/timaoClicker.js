@@ -10,22 +10,26 @@ var tempoGerarBolinhas = 10000;
 var tempo = 0;
 var tempoFinal = 0;
 var historico = [];
-var jogarNovamente = false;
 
 function jogar() {
     tempo = new Date();
+    cortina.classList.add('desaparecer')
+    cortina2.classList.remove('desaparecer')
 }
 
 function jogarNovamente() {
-    jogarNovamente = true;
-    if (jogarNovamente == true) {
-        neoQuimica = 0;
-        cassioRamos = 0;
-        parqueSaoJorge = 0;
-        bolinhas = 0;
-        click = 0;
-        jogar()
-    }
+    cortina3.classList.add('desaparecer')
+    cortina2.classList.remove('desaparecer')
+    click = 0;
+    bolinhas = 0;
+    neoQuimica = 0;
+    parqueSaoJorge = 0;
+    cassioRamos = 0;
+    preçoNeoQuimica = 50;
+    preçoCassioRamos = 75;
+    preçoParqueSaoJorge = 100;
+    tempoGerarBolinhas = 10000;
+    tempo = new Date();
 }
 
 function escudo() {
@@ -35,7 +39,8 @@ function escudo() {
     } else {
         bolinhas++;
     }
-    div_mensagem.innerHTML = `Você já deu ${click} click's, tem ${bolinhas.toFixed(2)} bolinhas, possui ${neoQuimica} Neo Quimica, ${parqueSaoJorge} Parque São Jorge e ${cassioRamos} Cassio Ramos`
+    bolinha.innerHTML = `<img src="../assets/img/bola-de-futebol-icon.png" alt=""> ${bolinhas}`;
+    neoQuimica.innerHTML += `${neoQuimica}`
 }
 
 function comprarNeoQuimica() {
@@ -58,6 +63,8 @@ function comprarNeoQuimica() {
         tempoFinal = tempo - new Date();
         tempoFinal = tempoFinal * 1000 * 60 * 60;
         historico.push(tempoFinal);
+        cortina2.classList.add('desaparecer')
+        cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinal}`
     }
 }
@@ -82,6 +89,8 @@ function comprarParqueSaoJorge() {
         tempoFinal = tempo - new Date();
         tempoFinal = tempoFinal * 1000 * 60 * 60;
         historico.push(tempoFinal);
+        cortina2.classList.add('desaparecer')
+        cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinal}`
     }
 }
@@ -105,6 +114,8 @@ function comprarCassioRamos() {
         tempoFinal = tempo - new Date();
         tempoFinal = tempoFinal * 1000 * 60 * 60;
         historico.push(tempoFinal);
+        cortina2.classList.add('desaparecer')
+        cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinal}`
     }
 }

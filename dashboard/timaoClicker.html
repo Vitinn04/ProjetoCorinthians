@@ -27,60 +27,74 @@
     </div>
   </div>
   <div class="timaoClicker">
-    <div class="inicio">
-      <div class="titulo">
-        <H1>TIMÃO CLICKER</H1>
-      </div>
-      <div class="explicacao">
-        <p class="titulos">REGRAS DO TIMÃO CLICKER</p>
-        <p class="titulos">Recursos:</p>
-        <p>
-          Existem quatro tipos de recursos: bolinhas, Neo Química, Parque São Jorge e Cássio Ramos.
-          As bolinhas são o recurso principal e são obtidas através de cliques ou geradas automaticamente ao longo do
-          tempo com base nas outras aquisições.</p>
+    <div id="cortina">
+      <div class="inicio">
+        <div class="titulo">
+          <H1>TIMÃO CLICKER</H1>
+        </div>
+        <div class="explicacao">
+          <p class="titulos">REGRAS DO TIMÃO CLICKER</p>
+          <p class="titulos">Recursos:</p>
+          <p>
+            Existem quatro tipos de recursos: bolinhas, Neo Química, Parque São Jorge e Cássio Ramos.
+            As bolinhas são o recurso principal e são obtidas através de cliques ou geradas automaticamente ao longo do
+            tempo com base nas outras aquisições.</p>
 
-        <p class="titulos">Compras:</p>
-        <p>
-          O jogador pode gastar bolinhas para comprar recursos como Neo Química, Parque São Jorge e Cássio Ramos.
-          Cada tipo de recurso comprado aumenta a produção de bolinhas ou fornece outros benefícios.
-        </p>
-        <ul>
-          <li>Neo Química: Aumenta a produção de bolinhas automaticamente ao longo do tempo.</li>
-          <li>Parque São Jorge: Reduz o intervalo entre as gerações de bolinhas da Neo Química.</li>
-          <li>Cassio Ramos: Aumenta a quantidade de bolinhas geradas por clique.</li>
-        </ul>
+          <p class="titulos">Compras:</p>
+          <p>
+            O jogador pode gastar bolinhas para comprar recursos como Neo Química, Parque São Jorge e Cássio Ramos.
+            Cada tipo de recurso comprado aumenta a produção de bolinhas ou fornece outros benefícios.
+          </p>
+          <ul>
+            <li>Neo Química: Aumenta a produção de bolinhas automaticamente ao longo do tempo.</li>
+            <li>Parque São Jorge: Reduz o intervalo entre as gerações de bolinhas da Neo Química.</li>
+            <li>Cassio Ramos: Aumenta a quantidade de bolinhas geradas por clique.</li>
+          </ul>
 
-        <p class="titulos">Atualização de Preços:</p>
-        <p>
-          Os preços dos recursos aumentam ao longo do tempo, o que torna as compras mais caras à medida que o jogo
-          progride.</p>
+          <p class="titulos">Atualização de Preços:</p>
+          <p>
+            Os preços dos recursos aumenta a cada compra, o que torna as compras mais caras à medida que o jogo
+            progride.</p>
 
-        <p class="titulos">Fim do Jogo:</p>
-        <p>
-          O jogo termina quando o jogador alcança 50 unidades de cada tipo de recurso.
-          O tempo para alcançar esse objetivo é registrado.</p>
-      </div>
-      <button class="botao" onclick="jogar()">Jogar</button>
-    </div>
-    <!-- <div class="jogo">
-      <div class="titulo">
-        <H1>TIMÃO CLICKER</H1>
-      </div>
-      <div class="button">
-        <button class="escudo" onclick="escudo()">Escudo</button>
-        <button class="botao" onclick="comprarNeoQuimica()">Neo Química</button>
-        <button class="botao" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
-        <button class="botao" onclick="comprarCassioRamos()">Cassio Ramos</button>
-        <div id="div_mensagem"></div>
+          <p class="titulos">Fim do Jogo:</p>
+          <p>
+            O jogo termina quando o jogador alcança 50 unidades de cada tipo de recurso.
+            O tempo para alcançar esse objetivo é registrado.</p>
+        </div>
+        <button class="botao" onclick="jogar() ">Jogar</button>
       </div>
     </div>
-    <div class="jogarNovamente">
-      <h1>Parabens você zerou o jogo!!! você agr é um verdadeiro CORINTHIANO!!!</h1>
-      <p id="jogoFinalizado"></p>
-      <h3>Deseja jogar novamente?</h3>
-      <button class="botao" onclick="jogarNovamente()">Sim</button>
-      <button class="botao" onclick="voltarInicio()">Não</button>
-    </div>  -->
+    <div id="cortina2" class="desaparecer">
+      <div class="jogo">
+        <div class="titulo">
+          <H1>TIMÃO CLICKER</H1>
+        </div>
+        <div>
+          <button class="escudo" onclick="escudo()">Escudo</button>
+          <p id="bolinha"></p>
+        </div>
+        <div class="botoes">
+          <button class="botaoNeo" onclick="comprarNeoQuimica()">Neo Química</button>
+          <button class="botaoParque" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
+          <button class="botaoCassio" onclick="comprarCassioRamos()">Cassio Ramos</button>
+        </div>
+        <p id="neoQuimica"></p>
+        <p id="parqueSaoJorge"></p>
+        <p id="cassioRamos"></p>
+      </div>
+    </div>
+    <div id="cortina3" class="desaparecer">
+      <div class="jogarNovamente">
+        <span class="concluido">PARABENS VOCÊ ZEROU O JOGO!!! VOCÊ AGORA É UM VERDADEIRO CORINTHIANO!!!</span>
+        <img class="gif" src="https://media1.tenor.com/m/KyQn8EktSfsAAAAC/cassio-guitarra.gif" alt="">
+        <p class="metricasGame" id="jogoFinalizado"></p>
+        <span class="desejaJogarNovamente">Deseja jogar novamente?</span>
+        <div class="botoesJogarNovamente">
+          <button class="botao" onclick="jogarNovamente()">Sim</button>
+          <button class="botao" onclick="voltarInicio()">Não</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="../js/timaoClicker.js"></script>
 </body>

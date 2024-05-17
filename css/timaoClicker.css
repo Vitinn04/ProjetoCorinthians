@@ -8,6 +8,8 @@
     background-size: cover;
 }
 
+/* Tela das Regras */
+
 .inicio {
     display: flex;
     flex-direction: column;
@@ -90,4 +92,63 @@ p {
     height: 85px;
     transition: 0.5s;
     font-size: larger;
+}
+
+/* Tela do Jogo */
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vh;
+}
+
+/* Tela de encerramento */
+
+.jogarNovamente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vh;
+}
+
+.concluido {
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.gif {
+    border: #fff solid;
+}
+
+.desejaJogarNovamente, .metricasGame {
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.botoesJogarNovamente {
+    display: flex;
+    gap: 5vh;
+}
+
+.desaparecer {
+    display: none;
 }

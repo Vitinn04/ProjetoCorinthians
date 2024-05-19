@@ -69,24 +69,49 @@
         <div class="titulo">
           <H1>TIMÃO CLICKER</H1>
         </div>
-        <div class="click">
-          <div class="escudo" onclick="escudo()">
-            <img src="../assets/img/escudoParaJogo.png" alt="">
+        <div class="parteJogavel">
+          <div class="click">
+            <div class="escudo" onclick="escudo()">
+              <img src="../assets/img/escudoParaJogo.png" alt="">
+            </div>
+            <p id="bolinha">
+              <img src="../assets/img/bola-de-futebol-icon.png" alt=""> 0
+            </p>
           </div>
-          <p id="bolinha"></p>
-        </div>
-        <div class="botoes">
-          <div class="botaoCompra">
-            <button class="botaoNeo" onclick="comprarNeoQuimica()">Neo Química</button>
-            <p id="neoQuimicaHtml"></p>
-          </div>
-          <div class="botaoCompra">
-            <button class="botaoParque" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
-            <p id="parqueSaoJorgeHtml"></p>
-          </div>
-          <div class="botaoCompra">
-            <button class="botaoCassio" onclick="comprarCassioRamos()">Cassio Ramos</button>
-            <p id="cassioRamosHtml"></p>
+          <div class="compras">
+            <div class="loja">
+              <div class="botaoCompra">
+                <button class="botaoJogo" onclick="comprarNeoQuimica()">Neo Química</button>
+                <p id="neoQuimicaHtml">
+                  0
+                </p>
+              </div>
+              <div class="imgCompras">
+                <span class="imagemComprada" id="printImgNeo"></span>
+              </div>
+            </div>
+            <div class="loja">
+              <div class="botaoCompra">
+                <button class="botaoJogo" onclick="comprarParqueSaoJorge()">Parque São Jorge</button>
+                <p id="parqueSaoJorgeHtml">
+                  0
+                </p>
+              </div>
+              <div class="imgCompras">
+                <span class="imagemComprada" id="printImgParque"></span>
+              </div>
+            </div>
+            <div class="loja">
+              <div class="botaoCompra">
+                <button class="botaoJogo" onclick="comprarCassioRamos()">Cassio Ramos</button>
+                <p id="cassioRamosHtml">
+                  0
+                </p>
+              </div>
+              <div class="imgCompras">
+                <span class="imagemComprada" id="printImgCassio"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

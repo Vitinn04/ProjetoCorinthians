@@ -97,17 +97,74 @@ p {
 /* Tela do Jogo */
 
 .jogo {
+    height: 100%;
+    width: 85vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 8vh;
+    gap: 15vh;
+}
+
+.parteJogavel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40vh;
 }
 
 .botoes {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vh;
+}
+
+.loja {
+    display: flex;
     justify-content: center;
     gap: 5vh;
+}
+
+.botaoJogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: #000 solid;
+    color: #fff;
+    font-size: larger;
+    -webkit-text-stroke: 1px #D72327;
+    font-size: large;
+    background-color: #fff;
+    background-image: url(../assets/img/bolaCorinthians.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.botaoJogo:active{
+    transform: scale(0.8);
+}
+
+.imgCompras {
+    height: 10vh;
+    width: 30vw;
+    border: solid #000;
+    background-color: #A66948;
+}
+
+.imagemComprada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    gap: 4vh;
+}
+
+.imagemComprada img {
+    height: 55px;
+    width: 55px;
 }
 
 .escudo {
@@ -183,5 +240,4 @@ p {
 
 .desaparecer {
     display: none;
-    transition: 1s;
 }

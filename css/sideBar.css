@@ -2,8 +2,6 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    background-image: url(../assets/img/DIVIDIDA.PNG);
-    background-size: cover;
 }
 
 .menu {

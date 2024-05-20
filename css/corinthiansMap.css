@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/img/neoQuimica.png);
+    background-size: cover;
+}
+
+.conteudo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    margin-left: 50vh;
+}
+
+.conteudo h1 {
+    text-align: center;
+    color: red;
+}
+
+.mapa {
+    border: 1px solid red;
+}
+
+#map {
+    height: 300px;
+    width: 80%;
+}
+
+.butaoMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}

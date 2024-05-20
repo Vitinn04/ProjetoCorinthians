@@ -1,5 +1,4 @@
 body {
-    display: flex;
     margin: 0;
     padding: 0;
     background-image: url(../assets/img/neoQuimica.png);
@@ -7,6 +6,8 @@ body {
 }
 
 .conteudo {
+    height: 100vh;
+    width: 85vw;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,21 +15,27 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8vh;
-    margin-left: 50vh;
 }
 
-.conteudo h1 {
+.titulo {
+    color: #fff;
+    text-decoration: none;
     text-align: center;
-    color: red;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
 }
 
 .mapa {
-    border: 1px solid red;
+    border: 1px solid #D72327;
 }
 
 #map {
     height: 300px;
-    width: 80%;
+    width: 90vh;
 }
 
 .butaoMap {

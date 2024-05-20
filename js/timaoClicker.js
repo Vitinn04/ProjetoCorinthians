@@ -89,7 +89,7 @@ function comprarNeoQuimica() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras);
+        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`
@@ -135,7 +135,7 @@ function comprarParqueSaoJorge() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras);
+        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`
@@ -180,7 +180,7 @@ function comprarCassioRamos() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras);
+        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`

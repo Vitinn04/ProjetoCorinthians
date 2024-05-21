@@ -28,3 +28,7 @@ function fotoIdolo() {
         img_idolo.classList.add("tarciane")
     }
 }
+
+function cadastrar() {
+    
+}

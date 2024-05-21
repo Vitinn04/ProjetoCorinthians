@@ -3,4 +3,110 @@ body {
     padding: 0;
     background-image: url(../assets/img/Clássico.png);
     background-size: cover;
+    gap: 1vh;
+}
+
+.povoboard {
+    height: 100vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    gap: 5vh;
+}
+
+.kpi {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    height: 35vh;
+    gap: 3vh;
+}
+
+.indicadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+    height: 35vh;
+    width: 30vw;
+}
+
+.melhores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+#imgJogadorFavorito {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.melhores p {
+    margin: 0;
+    text-shadow: 0.8;
+    font-size: 4vh;
+    display: inline;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.click {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+.click p{
+    margin: 0;
+    font-size: 15vh;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.graficoFavorito {
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 85vw;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
 }

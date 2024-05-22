@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/corinthiansMap.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../js/corinthiansMap.js" defer></script>
+    <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon">
+    <title>CORINTHIANS MAP</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="perfil">
+            <div id="foto_perfil" class="foto_usu"></div>
+            <span id="nome_usuario"></span>
+        </div>
+        <div class="navegacao">
+            <div><a href="../dashboard/povoboard.html">POVOBOARD</a></div>
+            <div><a href="../dashboard/timaoClicker.html">TIMÂO CLICKER</a></div>
+            <div><a href="../dashboard/corinthiansMap.html">CORINTHIANS MAP</a></div>
+        </div>
+        <div class="saida">
+            <span><a href="../login.html">SAIR</a></span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="titulo">
+            <h1>CORINTHIANS MAP</h1>
+        </div>
+        <div class="mapa" id="map"></div>
+        <div class="butaoMap">
+            <button onclick="setViewNeoQuimica()">Neo Química Arena</button>
+            <button onclick="setViewParqueSaoJorge()">Parque São Jorge</button>
+            <button onclick="setViewDrJoaquimGrava()">Dr. Joaquim Grava</button>
+            <button onclick="setViewYokohama()">Yokohama, Japão</button>
+        </div>
+    </div>
+</body>
+
+</html>

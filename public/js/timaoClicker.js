@@ -1,5 +1,3 @@
-nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
-
 var click = 0;
 var bolinhas = 0;
 var neoQuimica = 0;

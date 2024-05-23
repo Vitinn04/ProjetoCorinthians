@@ -52,7 +52,6 @@ function cadastrar() {
                 }, 2000);
 
                 limparFormulario();
-                finalizarAguardar();
             } else {
                 throw "Houve um erro ao tentar realizar o cadastro!";
             }

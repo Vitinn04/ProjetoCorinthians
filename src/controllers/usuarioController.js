@@ -20,10 +20,11 @@ function autenticar(req, res) {
                         console.log(resultadoAutenticar);
 
                         res.json({
-                            id: resultadoAutenticar[0].id,
+                            id: resultadoAutenticar[0].idCorinthiano,
                             email: resultadoAutenticar[0].email,
                             nome: resultadoAutenticar[0].nome,
                             senha: resultadoAutenticar[0].senha,
+                            idoloFav: resultadoAutenticar[0].idoloFav
                         });
 
                     } else if (resultadoAutenticar.length == 0) {

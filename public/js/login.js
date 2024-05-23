@@ -37,6 +37,7 @@ function entrar() {
                 sessionStorage.EMAIL_USUARIO = json.email;
                 sessionStorage.NOME_USUARIO = json.nome;
                 sessionStorage.ID_USUARIO = json.id;
+                sessionStorage.IDOLO = json.idoloFav;
 
                 setTimeout(function () {
                     window.location = "./dashboard/povoboard.html";

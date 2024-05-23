@@ -1,8 +1,5 @@
 const dash = document.getElementById("dash");
 
-nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
-// foto_perfil.innerHTML = `${}`;
-
 new Chart(dash, {
   type: "bar",
   data: {
@@ -50,3 +47,5 @@ new Chart(dash, {
     },
   },
 });
+
+

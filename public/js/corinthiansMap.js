@@ -1,5 +1,3 @@
-nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
-
 var map = L.map('map').setView([-23.545531, -46.473373], 16);
 var layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {});
 layer.addTo(map);

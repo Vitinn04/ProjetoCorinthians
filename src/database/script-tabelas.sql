@@ -1,11 +1,3 @@
--- Arquivo de apoio, caso você queira criar tabelas como as aqui criadas para a API funcionar.
--- Você precisa executar os comandos no banco de dados para criar as tabelas,
--- ter este arquivo aqui não significa que a tabela em seu BD estará como abaixo!
-
-/*
-comandos para mysql server
-*/
-
 create database corinthiansIndividual;
 
 use corinthiansIndividual;
@@ -16,3 +8,16 @@ nome varchar(45),
 email varchar(45),
 senha varchar(45),
 idoloFav int);
+
+INSERT INTO corinthiano VALUES
+('Victor', 'victor@gmail.com', '1910', 1),
+('Arthur', 'arthur@gmail.com', '12345', 8),
+('Gab', 'gab@gmail.com', '0101', 3),
+('Vitoria', 'vitoria@gmail.com', '2411', 1),
+('Nicolas Nunes', 'nicolas@gmail.com', '2001', 8),
+('Kevin Estrela', 'estrela@gmail.com', '1234', 5),
+('Sigma Redpill', 'xandaoForever@gmail.com', 'neymar', 8),
+('Matheus Oliveira', 'oliveira@gmail.com', '0123', 1),
+('João Kleber', 'joão@gmail.com', '12345', 7);
+
+select * from corinthiano;

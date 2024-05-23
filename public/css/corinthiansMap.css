@@ -38,9 +38,10 @@ body {
     width: 90vh;
 }
 
-.butaoMap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
+#selectMapa {
+    /* text-align: center; */
+    width: 14vw;
+    height: 5vh;
+    border: 1px #D72327 solid;
+    border-radius: 12px;
 }

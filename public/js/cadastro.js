@@ -21,7 +21,7 @@ function cadastrar() {
 
         return false;
     } else {
-        setInterval(sumirMensagem, 5000);
+        setInterval(sumirMensagem, 2000);
     }
 
     // Enviando o valor da nova input

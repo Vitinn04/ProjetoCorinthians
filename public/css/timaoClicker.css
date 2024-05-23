@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 3vh;
+    gap: 2vh;
 }
 
 .titulo {
@@ -74,22 +74,21 @@ p {
 
 .botao {
     width: 80px;
-    height: 80px;
-    border-radius: 100%;
+    height: 45px;
+    margin-bottom: 1vh;
+    border-radius: 20%;
     border: #000 solid;
     color: #fff;
     font-size: larger;
     -webkit-text-stroke: 1px #D72327;
     font-size: large;
     background-color: #fff;
-    background-image: url(../assets/img/bolaCorinthians.png);
-    background-size: cover;
     cursor: pointer;
 }
 
 .botao:hover {
     width: 85px;
-    height: 85px;
+    height: 50px;
     transition: 0.5s;
     font-size: larger;
 }
@@ -128,16 +127,15 @@ p {
 }
 
 .botaoJogo {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
+    width: 8vw;
+    height: 8vh;
+    border-radius: 20%;
     border: #000 solid;
     color: #fff;
     font-size: larger;
     -webkit-text-stroke: 1px #D72327;
     font-size: large;
     background-color: #fff;
-    background-image: url(../assets/img/bolaCorinthians.png);
     background-size: cover;
     cursor: pointer;
 }

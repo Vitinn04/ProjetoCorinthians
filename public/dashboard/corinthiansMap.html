@@ -35,11 +35,15 @@
             <h1>CORINTHIANS MAP</h1>
         </div>
         <div class="mapa" id="map"></div>
-        <div class="butaoMap">
-            <button onclick="setViewNeoQuimica()">Neo Química Arena</button>
-            <button onclick="setViewParqueSaoJorge()">Parque São Jorge</button>
-            <button onclick="setViewDrJoaquimGrava()">Dr. Joaquim Grava</button>
-            <button onclick="setViewYokohama()">Yokohama, Japão</button>
+        <div class="selectMap">
+            <select id="selectMapa" onchange="setViewMap()">
+                <option value="1">Neo Química Arena, Brasil</option>
+                <option value="2">Parque São Jorge, Brasil</option>
+                <option value="3">Dr. Joaquim Grava, Brasil</option>
+                <option value="4">Yokohama, Japão</option>
+                <option value="5">Pacaembu, Brasil</option>
+                <option value="6">Maracanã, Brasil</option>
+            </select>
         </div>
     </div>
 </body>

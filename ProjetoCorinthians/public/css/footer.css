@@ -1,0 +1,51 @@
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+footer img{
+    width: 80px;
+    height: 80px;
+}
+
+.redesSociais{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.redes p {
+    margin: 33px 0;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #D72327;
+    font-size: large;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes img {
+    width: auto;
+    height: 8vh;
+}
+
+.redes :hover {
+    transition: ease 0.2s;
+    color: #D72327;
+    font-size: larger;
+}

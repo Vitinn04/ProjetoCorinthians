@@ -1,0 +1,243 @@
+.timaoClicker {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/DIVIDIDA.PNG);
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Tela das Regras */
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vh;
+}
+
+.titulo {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.explicacao {
+    height: 30%;
+    width: 80%;
+    border: #000 solid;
+    border-radius: 12px;
+    padding: 1%;
+    background: rgba(255, 255, 255);
+}
+
+.titulos {
+    font-size: large;
+    color: #000;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #000;
+    text-align: center;
+    margin-top: 1%;
+}
+
+ul {
+    width: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    padding: 0;
+}
+
+li {
+    text-align: start;
+    color: black;
+    width: 70%;
+    font-weight: bold;
+}
+
+p {
+    font-size: large;
+    text-align: center;
+    margin: 1%;
+    color: black;
+}
+
+.botao {
+    width: 80px;
+    height: 45px;
+    margin-bottom: 1vh;
+    border-radius: 20%;
+    border: #000 solid;
+    color: #fff;
+    font-size: larger;
+    -webkit-text-stroke: 1px #D72327;
+    font-size: large;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.botao:hover {
+    width: 85px;
+    height: 50px;
+    transition: 0.5s;
+    font-size: larger;
+}
+
+/* Tela do Jogo */
+
+.jogo {
+    height: 100%;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15vh;
+}
+
+.parteJogavel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40vh;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vh;
+}
+
+.loja {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.botaoJogo {
+    width: 8vw;
+    height: 8vh;
+    border-radius: 20%;
+    border: #000 solid;
+    color: #fff;
+    font-size: larger;
+    -webkit-text-stroke: 1px #D72327;
+    font-size: large;
+    background-color: #fff;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.botaoJogo:active{
+    transform: scale(0.8);
+}
+
+.imgCompras {
+    height: 10vh;
+    width: 30vw;
+    border: solid #000;
+    background-color: #A66948;
+}
+
+.imagemComprada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    gap: 4vh;
+}
+
+.imagemComprada img {
+    height: 55px;
+    width: 55px;
+}
+
+.escudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.escudo img {
+    height: 250px;
+    width: 250px;
+}
+
+.escudo img:active {
+    transform: scale(0.8);
+}
+
+#bolinha,
+#neoQuimicaHtml,
+#parqueSaoJorgeHtml,
+#cassioRamosHtml {
+    color: #fff;
+    font-size: larger;
+    -webkit-text-stroke: 1px #D72327;
+}
+
+/* Tela de encerramento */
+
+.jogarNovamente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vh;
+}
+
+.concluido {
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.gif {
+    border: #fff solid;
+}
+
+.desejaJogarNovamente,
+.metricasGame {
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0.8;
+    display: inline;
+    background-color: #000;
+    border: #fff solid;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.botoesJogarNovamente {
+    display: flex;
+    gap: 5vh;
+}
+
+.desaparecer {
+    display: none;
+}

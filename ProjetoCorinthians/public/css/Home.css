@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.backgroundImgSobre{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/ENTRADA.PNG);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgDemocracia{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/democracia.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgNossaHistoria{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/minhaHistoriaeUmaPaginaEmPreto.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgInvasoes {
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/invasao.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgFeminino{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/futebolFeminino.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgOnu {
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/respeitaAsMina.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.backgroundImgSobreMim{
+    width: auto;
+    height: 100%;
+    background-image: url(../assets/img/sobre.png);
+    background-size: cover;
+    padding: 6%;
+}
+
+.conteudo {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    font-size: 20px;
+    text-align: start;
+    margin: 2%;
+}
+
+.imagemFeminino {
+    margin: 2%;
+}
+
+.fotos{
+    margin: 2%;
+}
+
+.fotos img{
+    width: auto;
+    height: 500px;
+}
+
+.imagemFeminino img{
+    width: 400px;
+    height: auto;
+}
+
+.titulo {
+    margin-top: 5vh;
+}
+
+.titulo h1{
+    color: #D72327;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

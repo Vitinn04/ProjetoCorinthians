@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CADASTRO</title>
+  <link rel="stylesheet" href="../css/navBar.css">
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <script src="../js/cadastro.js" defer></script>
+  <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="header">
+      <div class="container">
+        <a class="logo" href="index.html"><img src="../assets/img/corinthians-logo-0.png" alt=""></a>
+        <ul class="navegacao">
+          <li><a href="index.html">HOME</U></a>
+          <li><a href="./titulos.html">TITULOS</a></li>
+          <li><a href="./idolos.html">IDOLOS</a></li>
+          <li><a href="./gigante.html">GIGANTE</a></li>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./cadastro.html">CADASTRO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="conteudo">
+    <div class="container">
+      <div class="campos">
+        <input type="text" id="input_username" placeholder="NOME">
+        <input type="text" id="input_email" placeholder="EMAIL">
+        <input type="password" id="input_senha" placeholder="SENHA">
+        <input type="password" id="input_confirmar_senha" placeholder="CONFIRMAR SENHA">
+      </div>
+      <div class="idolo">
+        <div class="cassio" id="img_idolo"></div>
+        <h1>Idolo Preferido</h1>
+        <select name="favorito" id="select_idolo" onchange="fotoIdolo()">
+          <option value="1">Cassio Ramos</option>
+          <option value="2">Roberto Rivelino</option>
+          <option value="3">Socrates</option>
+          <option value="4">Gabliela Zanotti</option>
+          <option value="5">Tamires Cassia</option>
+          <option value="6">Leticia Izidoro</option>
+          <option value="7">Fagner Lemos</option>
+          <option value="8">Emerson Sheik</option>
+          <option value="9">José Maria</option>
+          <option value="10">Grazielle Pinheiro</option>
+          <option value="11">Gabrielle Portilho</option>
+          <option value="12">Tarciane Karen</option>
+        </select>
+      </div>
+      <button onclick="cadastrar()">CADASTRAR</button>
+    </div>
+    <div id="div_erro"></div>
+  </div>
+</body>
+
+</html>

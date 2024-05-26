@@ -53,7 +53,7 @@ Este projeto foi desenvolvido com o objetivo de contar um pouco sobre a históri
 
 <br>
 
-<img src="/ProjetoCorinthians/public/assets/printGit/telaDoTimãoClicker.png" width="100%">
+<img src="/ProjetoCorinthians/public/assets/printGit/telaDoCorinthiansMap.png" width="100%">
 
 <br>
 

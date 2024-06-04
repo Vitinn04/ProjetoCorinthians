@@ -1,8 +1,8 @@
 var click = 0;
-var bolinhas = 0;
-var neoQuimica = 0;
-var parqueSaoJorge = 0;
-var cassioRamos = 0;
+var bolinhas = 5000;
+var neoQuimica = 48;
+var parqueSaoJorge = 48;
+var cassioRamos = 48;
 var preçoNeoQuimica = 50;
 var preçoParqueSaoJorge = 75;
 var preçoCassioRamos = 100;
@@ -11,7 +11,6 @@ var tempo = 0;
 var tempoFinal = 0;
 var tempoFinalMilessegundo = 0;
 var tempoFinalHoras = 0;
-var historico = [];
 
 function jogar() {
     tempo = new Date();
@@ -20,6 +19,7 @@ function jogar() {
 }
 
 function jogarNovamente() {
+    enviarJogo();
     cortina3.classList.add('desaparecer')
     cortina2.classList.remove('desaparecer')
     printImgNeo.innerHTML = '';
@@ -35,7 +35,7 @@ function jogarNovamente() {
     preçoCassioRamos = 100;
     tempoGerarBolinhas = 10000;
     tempo = new Date();
-    escudo()
+    escudo();
 }
 
 function escudo() {
@@ -89,7 +89,6 @@ function comprarNeoQuimica() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`
@@ -135,7 +134,6 @@ function comprarParqueSaoJorge() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`
@@ -180,7 +178,6 @@ function comprarCassioRamos() {
         tempoFinalMilessegundo = Math.abs(new Date() - tempo);
         tempoFinal = 1000 * 60 * 60;
         tempoFinalHoras = tempoFinalMilessegundo / tempoFinal;
-        historico.push(tempoFinalHoras, click);
         cortina2.classList.add('desaparecer')
         cortina3.classList.remove('desaparecer')
         jogoFinalizado.innerHTML = `Você deu ${click} click's Tempo:${tempoFinalHoras.toFixed(2)}`
@@ -192,5 +189,26 @@ setInterval(function gerandoBolinhas() {
 }, tempoGerarBolinhas);
 
 function voltarInicio() {
+    enviarJogo();
     location.reload();
 }
+
+function enviarJogo() {
+    var tempoFinalHorasVar = tempoFinalHoras.toFixed(2);
+    var clickVar = click;
+    var idJogadorVar = sessionStorage.ID_USUARIO
+
+    fetch("/timaoClickerRoutes/enviarJogo", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            // crie um atributo que recebe o valor recuperado aqui
+            // Agora vá para o arquivo routes/timaoClicker.js
+            clickServer: clickVar,
+            tempoFinalHorasServer: tempoFinalHorasVar,
+            idJogadorServer: idJogadorVar
+        }),
+    })
+} 

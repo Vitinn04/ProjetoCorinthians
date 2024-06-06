@@ -16,14 +16,14 @@ body {
     border-right: #D72327 solid;
 }
 
-.perfil {
+.perfil{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 140%;
 }
 
-.perfil img {
+.perfil img{
     border-radius: 100%;
     width: 60px;
     height: 60px;

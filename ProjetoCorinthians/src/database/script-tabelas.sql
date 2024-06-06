@@ -41,12 +41,11 @@ SELECT idoloFav, COUNT(*) as quantidade FROM corinthiano
 
 select * from timaoClicker join corinthiano 
 	on fkCorinthiano = idCorinthiano
-		-- where idCorinthiano = 1
-        ;
+		where idCorinthiano = 1;
         
 select tempoJogo, fkCorinthiano from timaoClicker join corinthiano
 	on fkCorinthiano = idCorinthiano
 		order by tempoJogo asc 
 			limit 3;
 
-select AVG(clcks) from timaoClicker;
+select AVG(clicks) from timaoClicker;

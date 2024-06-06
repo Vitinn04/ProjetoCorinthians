@@ -48,4 +48,103 @@ new Chart(dash, {
   },
 });
 
+function maisEscolhido() {
+  fetch(`/povoboardRoutes/maisEscolhido`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(function (resposta) {
+    console.log("ESTOU NO THEN DO maisEscolhido()!")
+
+    if (resposta.ok) {
+      console.log(resposta);
+      resposta.json().then((json) => {
+        console.log(jogadorFavorito = json.jogadorFavorito)
+
+        jogadorFavorito = json.jogadorFavorito;
+
+        if (jogadorFavorito == 1) {
+          imgJogadorFavorito.classList.add("cassio")
+        } else if (jogadorFavorito == 2) {
+          imgJogadorFavorito.classList.add("rivelino")
+        } else if (jogadorFavorito == 3) {
+          imgJogadorFavorito.classList.add("socrates")
+        } else if (jogadorFavorito == 4) {
+          imgJogadorFavorito.classList.add("zanotti")
+        } else if (jogadorFavorito == 5) {
+          imgJogadorFavorito.classList.add("tamires")
+        } else if (jogadorFavorito == 6) {
+          imgJogadorFavorito.classList.add("leticia")
+        } else if (jogadorFavorito == 7) {
+          imgJogadorFavorito.classList.add("fagner")
+        } else if (jogadorFavorito == 8) {
+          imgJogadorFavorito.classList.add("emerson")
+        } else if (jogadorFavorito == 9) {
+          imgJogadorFavorito.classList.add("zeMaria")
+        } else if (jogadorFavorito == 10) {
+          imgJogadorFavorito.classList.add("grazi")
+        } else if (jogadorFavorito == 11) {
+          imgJogadorFavorito.classList.add("portilho")
+        } else if (jogadorFavorito == 12) {
+          imgJogadorFavorito.classList.add("tarciane")
+        }
+
+      });
+    } else {
+      console.log("Houve um erro ao tentar realizar a requisição!");
+    }
+  });
+
+}
+
+function mediaClick() {
+  fetch(`/povoboardRoutes/mediaClick`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(function (resposta) {
+    console.log("ESTOU NO THEN DO mediaClick()!")
+
+    if (resposta.ok) {
+      console.log(resposta);
+      resposta.json().then((json) => {
+        console.log(media = json.media)
+
+        var media = json.media;
+
+        numeroMedia.innerHTML = `${media}`;
+      });
+    } else {
+      console.log("Houve um erro ao tentar realizar a requisição!");
+    }
+  });
+
+}
+
+function ranking() {
+  fetch(`/povoboardRoutes/ranking`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(function (resposta) {
+    console.log("ESTOU NO THEN DO ranking()!")
+
+    if (resposta.ok) {
+      console.log(resposta);
+      resposta.json().then((json) => {
+        console.log(json.rankingNome, json.rankingTempo)
+
+        ranking1.innerHTML = `1° ${json.rankingNome} - ${json.rankingTempo}`;
+        ranking2.innerHTML = `2° ${json.rankingNome} - ${json.rankingTempo}`;
+        ranking3.innerHTML = `3° ${json.rankingNome} - ${json.rankingTempo}`;
+      });
+    } else {
+      console.log("Houve um erro ao tentar realizar a requisição!");
+    }
+  });
+
+}
 

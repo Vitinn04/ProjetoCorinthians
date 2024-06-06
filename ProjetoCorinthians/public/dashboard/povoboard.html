@@ -16,7 +16,7 @@
     <title>POVOBOARD</title>
   </head>
 
-  <body>
+  <body onload="maisEscolhido(), mediaClick(), ranking()">
     <div class="menu">
       <div class="perfil">
         <div id="foto_perfil" class=""></div>
@@ -37,22 +37,22 @@
       <div class="kpi">
         <div class="indicadores">
           <h3>Jogador Favorito dos Corinthianos</h3>
-          <img id="imgJogadorFavorito" src="../assets/img/CASSIO.PNG" alt="" />
+          <div id="imgJogadorFavorito" class=""></div>
         </div>
         <div class="indicadores">
           <div class="media">
             <h3>Media de click's no TIMÃO CLICKER</h3>
           </div>
           <div class="click">
-            <p id="mediaClick">3.000</p>
+            <p id="numeroMedia"></p>
           </div>
         </div>
         <div class="indicadores">
           <h3>Ranking de Corinthianos</h3>
           <div class="melhores">
-            <p id="ranking1">1° Victor</p>
-            <p id="ranking2">2° Cintia</p>
-            <p id="ranking3">3° Vitoria</p>
+            <p id="ranking1"></p>
+            <p id="ranking2"></p>
+            <p id="ranking3"></p>
           </div>
         </div>
       </div>

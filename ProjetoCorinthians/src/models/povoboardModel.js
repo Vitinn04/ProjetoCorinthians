@@ -21,11 +21,40 @@ function mediaClick() {
 
 function ranking() {
     var instrucaoSql = `
-    select tempoJogo as tempo, corinthiano.nome as nome from timaoClicker join corinthiano
-	on fkCorinthiano = idCorinthiano
-		order by tempo asc 
-			limit 3;
+    SELECT
+    (SELECT tempoJogo FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1) AS tempo1,
+    (SELECT corinthiano.nome FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1) AS nome1,
+    (SELECT tempoJogo FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1 OFFSET 1) AS tempo2,
+    (SELECT corinthiano.nome FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1 OFFSET 1) AS nome2,
+    (SELECT tempoJogo FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1 OFFSET 2) AS tempo3,
+    (SELECT corinthiano.nome FROM timaoClicker JOIN corinthiano ON fkCorinthiano = idCorinthiano ORDER BY tempoJogo ASC LIMIT 1 OFFSET 2) AS nome3;
 `;
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
+function grafico() {
+    var instrucaoSql = `
+    SELECT 
+    CASE idoloFav
+		WHEN 1 THEN 'cassio'
+        WHEN 2 THEN 'rivelino'
+        WHEN 3 THEN 'socrates'
+        WHEN 4 THEN 'zanotti'
+        WHEN 5 THEN 'tamires'
+        WHEN 6 THEN 'leticia'
+        WHEN 7 THEN 'fagner'
+        WHEN 8 THEN 'emerson'
+        WHEN 9 THEN 'zeMaria'
+        WHEN 10 THEN 'grazi'
+        WHEN 11 THEN 'portilho'
+        WHEN 12 THEN 'tarciane'
+    END as nomeIdolo,
+    COUNT(*) as quantidade 
+FROM corinthiano
+GROUP BY idoloFav
+ORDER BY quantidade DESC;
+   `;
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
@@ -33,6 +62,7 @@ function ranking() {
 module.exports = {
     maisEscolhido,
     mediaClick,
-    ranking
+    ranking,
+    grafico
 };
 

@@ -1,53 +1,3 @@
-const dash = document.getElementById("dash");
-
-new Chart(dash, {
-  type: "bar",
-  data: {
-    labels: ['Cassio', 'Fagner', 'Emerson', 'Zanotti', 'Zé Maria', 'Portilho', 'Grazi', 'Socrates', 'Rivelino', 'Tamires', 'Leticia', 'Tarciane'],
-    datasets: [
-      {
-        label: "Jogador Favorito",
-        data: [50, 45, 39, 33, 29, 24, 22, 19, 14, 12, 1, 0],
-        borderWidth: 1,
-        backgroundColor: "#fff",
-        borderColor: "#D72327",
-      },
-    ],
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      x: {
-        display: true,
-        title: {
-          display: true,
-          text: "Número de escolhas", // Título do eixo X
-          font: {
-            weight: "bold", // Estilo da fonte (negrito)
-            size: 20, // Tamanho da fonte
-            family: "Arial", // Tipo de fonte
-          },
-          padding: {
-            // Preenchimento do título
-            top: 10,
-            bottom: 10,
-          },
-        },
-      },
-      y: {
-        display: false, // Ocultar escala do eixo Y
-      },
-    },
-    plugins: {
-      legend: {
-        display: true,
-        position: "top", // Posição da legenda
-      },
-    },
-  },
-});
-
 function maisEscolhido() {
   fetch(`/povoboardRoutes/maisEscolhido`, {
     method: "GET",
@@ -135,16 +85,98 @@ function ranking() {
     if (resposta.ok) {
       console.log(resposta);
       resposta.json().then((json) => {
-        console.log(json.rankingNome, json.rankingTempo)
+        console.log(json.rankingNome2, json.rankingTempo2)
 
-        ranking1.innerHTML = `1° ${json.rankingNome} - ${json.rankingTempo}`;
-        ranking2.innerHTML = `2° ${json.rankingNome} - ${json.rankingTempo}`;
-        ranking3.innerHTML = `3° ${json.rankingNome} - ${json.rankingTempo}`;
+        ranking1.innerHTML = `1° ${json.rankingNome1} - ${json.rankingTempo1}`;
+        ranking2.innerHTML = `2° ${json.rankingNome2} - ${json.rankingTempo2}`;
+        ranking3.innerHTML = `3° ${json.rankingNome3} - ${json.rankingTempo3}`;
       });
     } else {
       console.log("Houve um erro ao tentar realizar a requisição!");
     }
   });
 
+}
+
+var nomeIdolo = [];
+var quantidade = [];
+
+function grafico() {
+  fetch(`/povoboardRoutes/grafico`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(function (resposta) {
+    console.log("ESTOU NO THEN DO grafico()!")
+
+    if (resposta.ok) {
+      console.log(resposta);
+      resposta.json().then((json) => {
+        console.log(json)
+
+        for (var i = 0; i < json.length; i++) {
+          nomeIdolo.push(json[i].nomeIdolo)
+          quantidade.push(json[i].quantidade)
+        }
+        criarGrafico()
+      });
+    } else {
+      console.log("Houve um erro ao tentar realizar a requisição!");
+    }
+  });
+
+}
+
+function criarGrafico() {
+  const dash = document.getElementById("dash");
+
+  new Chart(dash, {
+    type: "bar",
+    data: {
+      labels: nomeIdolo,
+      datasets: [
+        {
+          label: "Jogador Favorito",
+          data: quantidade,
+          borderWidth: 1,
+          backgroundColor: "#fff",
+          borderColor: "#D72327",
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          display: true,
+          title: {
+            display: true,
+            text: "Número de escolhas", // Título do eixo X
+            font: {
+              weight: "bold", // Estilo da fonte (negrito)
+              size: 20, // Tamanho da fonte
+              family: "Arial", // Tipo de fonte
+            },
+            padding: {
+              // Preenchimento do título
+              top: 10,
+              bottom: 10,
+            },
+          },
+        },
+        y: {
+          display: false, // Ocultar escala do eixo Y
+        },
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: "top", // Posição da legenda
+        },
+      },
+    },
+  });
 }
 

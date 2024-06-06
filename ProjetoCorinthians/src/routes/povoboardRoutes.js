@@ -15,4 +15,8 @@ router.get("/ranking", function (req, res) {
     povoboardController.ranking(req, res);
 });
 
+router.get("/grafico", function (req, res) {
+    povoboardController.grafico(req, res);
+});
+
 module.exports = router;

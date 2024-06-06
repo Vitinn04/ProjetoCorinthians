@@ -45,7 +45,7 @@ export default [
         ]
     },
     {
-        questao: "Quantos a maior sequência invicta da historia do Corinthians?",
+        questao: "Qual a maior sequência invicta da historia do Corinthians?",
         alternativas: [
             {opcao: "100 jogos", correto: false},
             {opcao: "10 jogos", correto: false},

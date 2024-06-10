@@ -37,18 +37,18 @@ function grafico() {
     var instrucaoSql = `
     SELECT 
     CASE idoloFav
-		WHEN 1 THEN 'cassio'
-        WHEN 2 THEN 'rivelino'
-        WHEN 3 THEN 'socrates'
-        WHEN 4 THEN 'zanotti'
-        WHEN 5 THEN 'tamires'
-        WHEN 6 THEN 'leticia'
-        WHEN 7 THEN 'fagner'
-        WHEN 8 THEN 'emerson'
-        WHEN 9 THEN 'zeMaria'
-        WHEN 10 THEN 'grazi'
-        WHEN 11 THEN 'portilho'
-        WHEN 12 THEN 'tarciane'
+		WHEN 1 THEN 'Cassio'
+        WHEN 2 THEN 'Rivelino'
+        WHEN 3 THEN 'Socrates'
+        WHEN 4 THEN 'Zanotti'
+        WHEN 5 THEN 'Tamires'
+        WHEN 6 THEN 'Leticia'
+        WHEN 7 THEN 'Fagner'
+        WHEN 8 THEN 'Emerson'
+        WHEN 9 THEN 'ZeMaria'
+        WHEN 10 THEN 'Grazi'
+        WHEN 11 THEN 'Portilho'
+        WHEN 12 THEN 'Tarciane'
     END as nomeIdolo,
     COUNT(*) as quantidade 
 FROM corinthiano

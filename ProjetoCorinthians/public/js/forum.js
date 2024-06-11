@@ -69,11 +69,18 @@ function atualizarFeed() {
                     var spanNome = document.createElement("span");
                     var divDescricao = document.createElement("div");
 
-                    
+                    if (publicacao.idUsuario == sessionStorage.ID_USUARIO) {
+                        var divButtons = document.createElement("div");
+                        var btnDeletar = document.createElement("button");
+                    }
 
-                    spanTitulo.innerHTML = "Título: <b>" + publicacao.titulo + "</b>";
-                    spanNome.innerHTML = "Autor: <b>" + publicacao.nomeCompleto + "</b>";
-                    divDescricao.innerHTML = "Descrição: <b>" + publicacao.descricao + "</b>";
+                    spanTitulo.innerHTML = "Assunto: <b>" + publicacao.titulo + "</b>";
+                    spanNome.innerHTML = "Corinthiano: <b>" + publicacao.nome + "</b>";
+                    divDescricao.innerHTML = "Coringamento: <b>" + publicacao.descricao + "</b>";
+
+                    if (publicacao.idUsuario == sessionStorage.ID_USUARIO) {
+                        btnDeletar.innerHTML = "Deletar";
+                    }
 
                     divPublicacao.className = "publicacao";
                     spanTitulo.id = "inputNumero" + publicacao.idAviso;
@@ -83,22 +90,22 @@ function atualizarFeed() {
 
 
                     if (publicacao.idUsuario == sessionStorage.ID_USUARIO) {
-                        var divButtons = document.createElement("div");
-                        var btnDeletar = document.createElement("button");
-                        btnDeletar.innerHTML = "Deletar";
-                        divButtons.className = "div-buttons"
 
+                        divButtons.className = "div-buttons"
                         btnDeletar.className = "publicacao-btn-editar"
                         btnDeletar.idComentario = "btnDeletar" + publicacao.idComentario;
                         btnDeletar.setAttribute("onclick", `deletar(${publicacao.idComentario})`);
-                        divButtons.appendChild(btnDeletar);
-                        divPublicacao.appendChild(divButtons);
                     }
 
                     divPublicacao.appendChild(spanNome);
                     divPublicacao.appendChild(spanTitulo);
                     divPublicacao.appendChild(divDescricao);
                     feed.appendChild(divPublicacao);
+
+                    if (publicacao.idUsuario == sessionStorage.ID_USUARIO) {
+                        divButtons.appendChild(btnDeletar);
+                        divPublicacao.appendChild(divButtons);
+                    }
                 }
 
             });

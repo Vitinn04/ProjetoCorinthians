@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/sideBar.css" />
+    <link rel="stylesheet" href="../css/forum.css">
+    <link rel="shortcut icon" href="../assets/img/corinthians-logo-0.png" type="image/x-icon" />
+    <script src="../js/forum.js" defer></script>
+    <script src="../js/fotoPerfil.js" defer></script>
+    <title>Bando de loucos</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="perfil">
+            <div id="foto_perfil"></div>
+            <span id="nome_usuario"></span>
+        </div>
+        <div class="navegacao">
+            <div><a href="../dashboard/povoboard.html">POVOBOARD</a></div>
+            <div><a href="../dashboard/timaoClicker.html">TIMÂO CLICKER</a></div>
+            <div><a href="../dashboard/corinthiansMap.html">CORINTHIANS MAP</a></div>
+            <div><a href="../dashboard/forum.html">BANDO DE LOUCOS</a></div>
+        </div>
+        <div class="saida">
+            <span><a href="../login.html">SAIR</a></span>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="placar"><img src="../assets/img/placar.png" alt=""></div>
+        <h1 class="publish">Publicar um comentário</h1>
+        <div class="comment">
+            <form id="form_postagem" method="post" onsubmit="return publicar()">
+                <label>
+                    <span id="titulo">Assunto:</span>
+                    <input name="titulo" id="tituloInput" maxlength="100" type="text">
+                </label>
+                <label>
+                    <span id="titulo">Comentário (máximo de 250 caracteres):</span>
+                    <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                </label>
+                <button>Enviar</button>
+            </form>
+        </div>
+
+        <h1 class="mural">Mural de Comentários</h1>
+        <div class="comment_section">
+            <div class="div-results">
+                <div id="feed_container" class="feed-container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

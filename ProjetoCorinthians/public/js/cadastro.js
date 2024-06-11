@@ -89,8 +89,8 @@ function validarNome() {
     var nomeGestor = input_username.value;
     var mensagemNome = '';
 
-    if (nomeGestor.length < 3) {
-        mensagemNome = 'Nome deve ter mais que 3 caracteres.';
+    if (nomeGestor.length < 3 || nomeGestor.length >= 20) {
+        mensagemNome = 'Nome deve ter mais que 3 caracteres e menos que 20.';
         div_mensagemNome.innerHTML = mensagemNome;
         return false;
     } else {
@@ -100,10 +100,10 @@ function validarNome() {
 }
 
 function validarEmail() {
-    var emailGestor = input_email.value;
+    var email = input_email.value;
     var mensagemEmail = '';
-    var emailCom = emailGestor.endsWith('.com');
-    var emailArroba = emailGestor.indexOf("@") > 0;
+    var emailCom = email.endsWith('.com');
+    var emailArroba = email.indexOf("@") > 0;
     
     if (!emailCom || !emailArroba) {
         mensagemEmail = 'Email inválido';

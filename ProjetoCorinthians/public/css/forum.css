@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("../assets/img/invasao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main {
+    background-color: #455750;
+    width: 110px;
+    height: 35px;
+    margin-right: 25px;
+    color: #EEE7DA;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#main:hover {
+    color: #8ad3dd;
+}
+
+.page {
+    margin-left: 15vw;
+    width: 85vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placar img{
+    width: 30vw;
+    height: 20vh;
+}
+
+h1 {
+    color: #D72327;
+}
+
+.publish {
+    margin-top: 70px;
+    margin-bottom: 2vh;
+    gap: 5vh;
+    text-shadow:
+        -1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        1px -1px 0px #000000,
+        1px 0px 0px #000000;
+}
+
+.mural {
+    margin-top: 25px;
+    margin-bottom: 2vh;
+    gap: 5vh;
+    text-shadow:
+        -1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        1px -1px 0px #000000,
+        1px 0px 0px #000000;
+}
+
+.comment {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.comment input {
+    width: 95%;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.comment textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+#titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#tituloInput {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.comment .button {
+    display: flex;
+    justify-content: end;
+}
+
+.comment button {
+    background-color: #D72327;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+button:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.comment span {
+    margin-top: 26px;
+    margin-right: 355px;
+    font-size: 17px;
+}
+
+.comment_section {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.publicacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 3px solid #000;
+    padding: 20px;
+}
+
+.publicacao>*:not(:last-child) {
+    padding: 0 0 10px 0;
+}
+
+.publicacao-btn-editar {
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 8px;
+    color: white;
+    background-color: #000000;
+    width: 80px;
+}
+
+.div-results {
+    width: 100%;
+}
+
+.div-results .feed-container {
+    border-radius: 5px;
+}
+
+.div-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div-buttons>* {
+    margin-left: 30px;
+}
+
+.publicacao-titulo, .publicacao-descricao{
+    word-break: break-all;
+}

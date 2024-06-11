@@ -128,3 +128,16 @@ body {
     border: 5px solid #000000;
     border-radius: 50px;
 }
+
+#div_mensagemNome,
+#div_mensagemConfirmaeSenha,
+#div_mensagemEmail, #div_mensagemSenha {
+    color: #fff;
+    text-shadow:
+        -1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        1px -1px 0px #000000,
+        1px 0px 0px #000000;
+    font-size: larger;
+    
+}
